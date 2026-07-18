@@ -25,25 +25,14 @@ h1 {
 }
 
 .card {
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(5px);
-    border-radius: 15px;
-    overflow: hidden; /* belangrijk */
-    padding: 0;       /* geen witte rand */
-    margin-bottom: 20px;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
 }
 
 .card iframe {
     width: 100%;
     height: 100%;
-    border: none;
-    display: block;
-}
-
-.stats {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+    border: 0;
 }
 
 .stat {
