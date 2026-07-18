@@ -53,6 +53,16 @@ h1 {
 </style>
 </head>
 
+
+<script>
+fetch("https://script.google.com/macros/s/AKfycbyGApIzcbZKCkBKa6PMroLwpz0AZweWCnjODrLHyotiKyGKqJyhaaYoP6Q7wV4F-mk/exec")
+  .then(response => response.json())
+  .then(data => {
+      document.getElementById("volgers").textContent = data.volgers;
+      document.getElementById("positie").textContent = "#" + data.positie;
+  });
+</script>
+
 <body>
 
 <div class="container">
@@ -69,12 +79,12 @@ h1 {
 
     <div class="stats">
         <div class="stat">
-            <h2>20</h2>
+            <h2 id="volgers">...</h2>
             <p>Volgers</p>
         </div>
 
         <div class="stat">
-            <h2>#1</h2>
+            <h2 id="positie">...</h2>
             <p>Positie</p>
         </div>
     </div>
